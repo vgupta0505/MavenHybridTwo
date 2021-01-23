@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [SuiteHybridTwo]" parallel="tests">
+  <listeners>
+    <listener class-name="com.MavenHybridTwo.DataProvider.ExtentReportManager"/>
+  </listeners>
+  <test thread-count="3" name="TestChrome(failed)" parallel="tests">
+    <parameter name="Browser" value="Chrome"/>
+    <classes>
+      <class name="com.MavenHybridTwo.TestCases.TC_LoginDDT_002">
+        <methods>
+          <include name="loginTest" invocation-numbers="2"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.MavenHybridTwo.TestCases.TC_LoginDDT_002 -->
+    </classes>
+  </test> <!-- TestChrome(failed) -->
+</suite> <!-- Failed suite [SuiteHybridTwo] -->

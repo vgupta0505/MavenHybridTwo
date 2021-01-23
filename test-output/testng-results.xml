@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="SuiteHybridTwo" duration-ms="44649" started-at="2021-01-23T13:36:58Z" finished-at="2021-01-23T13:37:43Z">
+    <groups>
+    </groups>
+    <test name="TestChrome" duration-ms="44649" started-at="2021-01-23T13:36:58Z" finished-at="2021-01-23T13:37:43Z">
+      <class name="com.MavenHybridTwo.TestCases.TC_LoginDDT_002">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.MavenHybridTwo.TestCases.TC_LoginDDT_002@1b66c0fb]" name="setup" is-config="true" duration-ms="9253" started-at="2021-01-23T13:36:59Z" finished-at="2021-01-23T13:37:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:com.MavenHybridTwo.TestCases.TC_LoginDDT_002@1b66c0fb]" name="loginTest" duration-ms="9996" started-at="2021-01-23T13:37:09Z" data-provider="logindata" finished-at="2021-01-23T13:37:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin@yourstore.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:com.MavenHybridTwo.TestCases.TC_LoginDDT_002@1b66c0fb]" name="loginTest" duration-ms="9969" started-at="2021-01-23T13:37:19Z" data-provider="logindata" finished-at="2021-01-23T13:37:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin@yourstore.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admi]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="FAIL" signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:com.MavenHybridTwo.TestCases.TC_LoginDDT_002@1b66c0fb]" name="loginTest" duration-ms="5428" started-at="2021-01-23T13:37:29Z" data-provider="logindata" finished-at="2021-01-23T13:37:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[adin@yourstore.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at com.MavenHybridTwo.TestCases.TC_LoginDDT_002.loginTest(TC_LoginDDT_002.java:43)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:com.MavenHybridTwo.TestCases.TC_LoginDDT_002@1b66c0fb]" name="loginTest" duration-ms="8196" started-at="2021-01-23T13:37:34Z" data-provider="logindata" finished-at="2021-01-23T13:37:42Z">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.MavenHybridTwo.TestCases.TC_LoginDDT_002@1b66c0fb]" name="tearDown" is-config="true" duration-ms="793" started-at="2021-01-23T13:37:42Z" finished-at="2021-01-23T13:37:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.MavenHybridTwo.TestCases.TC_LoginDDT_002 -->
+    </test> <!-- TestChrome -->
+  </suite> <!-- SuiteHybridTwo -->
+</testng-results>
